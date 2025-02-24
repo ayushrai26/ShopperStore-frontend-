@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* Smooth Scrolling */
+/* Ensure smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -17,7 +17,7 @@ html {
   box-sizing: border-box;
 }
 
-/* Links */
+/* Improve the appearance of links */
 a {
   text-decoration: none;
   color: #007bff;
@@ -41,7 +41,6 @@ ul {
   margin: 0;
 }
 
-
 /* Make images responsive */
 img {
   max-width: 100%;
@@ -49,24 +48,13 @@ img {
   display: block;
 }
 
-/* Buttons */
+/* Buttons - A Modern Look */
 button {
   font-family: inherit;
   cursor: pointer;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: #007bff;
-  color: white;
-  font-size: 16px;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:hover {
-  background: #0056b3;
   transform: scale(1.05);
 }
-
-
-
-
