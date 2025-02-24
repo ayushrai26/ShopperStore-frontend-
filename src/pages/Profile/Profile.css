@@ -1,0 +1,81 @@
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic,
+  .default-profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .default-profile-pic {
+    font-size: 100px;
+    color: gray;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  .logout-btn {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .orders-section,
+  .settings-section {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .update-profile-btn,
+  .change-password-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  

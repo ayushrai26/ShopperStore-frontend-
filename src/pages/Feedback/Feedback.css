@@ -1,0 +1,74 @@
+.feedback_form {
+    border-radius: 12px;
+    margin: 2% auto; /* Centers the form */
+    width: 50%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White for a clean, modern look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feedback_form:hover {
+    transform: scale(1.02);
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_inputs label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form_inputs input,
+.form_inputs textarea {
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.form_inputs input:focus,
+.form_inputs textarea:focus {
+    border-color: #ff9900; /* Highlight on focus */
+    outline: none;
+}
+
+.form_inputs textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit_button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit_button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}

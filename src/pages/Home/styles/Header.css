@@ -1,0 +1,483 @@
+/* Main header container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ffffff, #f8f8f8); /* Gradient for a sleek look */
+    border-bottom: 2px solid #eee;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* On scroll effect */
+.main-container.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff6600, #cc5500);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(204, 85, 0, 0.5);
+}
+
+/* Logo text with glowing effect */
+.logo_Name {
+    font-size: 38px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo_Name a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.logo_Name:hover {
+    transform: scale(1.05);
+}
+
+/* Adding a glowing underline effect */
+.logo_Name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6600, #cc5500);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo_Name:hover::after {
+    transform: scaleX(1);
+}
+
+/* Search bar */
+.Search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input {
+    width: 450px;
+    height: 42px;
+    border-radius: 22px;
+    border: 2px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+/* Search icon */
+.search_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.search_icon:hover {
+    color: #ff6600;
+}
+
+/* Cart section */
+.cart_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart_container:hover {
+    transform: scale(1.08);
+}
+
+/* Shopping cart icon */
+.cart_icon {
+    font-size: 34px;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart_container:hover .cart_icon {
+    transform: rotate(10deg);
+}
+
+/* Cart count badge */
+.cart_count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #ff6600;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 9px;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+}
+
+/* Cart count bounce effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+/* Category dropdown */
+.category {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category_button, select {
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.category_button:hover, select:hover {
+    background-color: #ff6600;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Login button */
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #cc5500;
+    transform: scale(1.08);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Search .input {
+        width: 300px;
+    }
+
+    .cart_container {
+        margin-top: 10px;
+    }
+
+    .category {
+        margin-top: 10px;
+    }
+}
+/* Home Button */
+.Home_button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff6600, #cc5500);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect with glow */
+.home-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(255, 102, 0, 0.5);
+}
+
+/* Home Button Shine Effect */
+.home-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease-in-out;
+}
+
+.home-button:hover::before {
+    left: 120%;
+}
+
+/* Adding a glowing border effect */
+.home-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(90deg, #ff6600, #cc5500);
+    /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-button:hover::after {
+    padding: 4px;
+}
+
+/* Ripple Click Effect */
+.home-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .home-button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
+/* Sidebar Toggle Button */
+.menu-button {
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6600, #cc5500);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(255, 102, 0, 0.5);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Hidden by default */
+    width: 280px;
+    height: 100%;
+    background: linear-gradient(135deg, #2c3e50, #1a252f);
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+
+.sidebar.open {
+    left: 0;
+} 
+
+/* Sidebar Header */
+.top_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* User Greeting */
+.hello_user_icon {
+    font-size: 22px;
+    color: #ff9900;
+    margin-right: 10px;
+}
+
+.hello_user {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Close Button */
+.close-button {
+    font-size: 22px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    color: #ff6600;
+}
+
+/* Sidebar Menu Items */
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255, 102, 0, 0.7);
+    color: white;
+}
+
+/* Sidebar Icons */
+.sidebar_icon span {
+    font-size: 22px;
+    color: #ff9900;
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 240px;
+    }
+
+    .hello_user {
+        font-size: 16px;
+    }
+
+    .sidebar ul li {
+        font-size: 16px;
+    }
+}
+.autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 8px; /* Softer corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    z-index: 1000;
+    list-style: none;
+    padding: 5px 0;
+    margin: 5px 0 0;
+    max-height: 250px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out; /* Smooth appearance */
+    border: 1px solid #ddd; /* Subtle border for structure */
+}
+
+/* Hide scrollbar */
+.autocomplete-list::-webkit-scrollbar {
+    display: none;
+}
+
+.autocomplete-list li {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: background 0.2s ease-in-out, transform 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Hover effect */
+.autocomplete-list li:hover {
+    background: #f8f9fa; /* Softer hover background */
+    transform: scale(1.02); /* Slight pop-out effect */
+}
+
+/* Optional: Add icons to suggestions */
+.autocomplete-list li::before {
+    content: "🔍"; /* Search icon */
+    font-size: 14px;
+    opacity: 0.6;
+}
+
