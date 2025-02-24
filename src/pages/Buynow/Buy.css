@@ -1,37 +1,64 @@
 .buy_container {
     border: 1px solid;
-    width: 580px; /* Set a fixed width */
-    padding: 20px; /* Add padding for spacing */
-    background-color: white; /* Optional: Set background color */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-    border-radius: 10px; /* Optional: Rounded corners */
+    width: 90%; /* Make it responsive */
+    max-width: 580px; /* Keep a maximum width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     
-    position: absolute;
-    bottom:20%;
+    position: fixed; /* Changed to fixed so it stays in view */
+    bottom: 10%; /* Lowered for better visibility */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%); /* Ensures proper centering */
     
-    left:35%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-   
 }
-.buy_img{
-    
+
+/* Responsive image container */
+.buy_img {
     border-right: 1px solid;
+    max-width: 100%;
 }
+
 .buy_img:hover {
     cursor: pointer;
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.buy_content{
-    padding:20px 70px 20px 70px;
-    
+
+/* Adjusted padding for better mobile view */
+.buy_content {
+    padding: 20px;
+    text-align: center;
 }
-.buy_button{
+
+/* Responsive Buy Button */
+.buy_button {
     width: auto;
     white-space: nowrap;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     background-color: #e68a00;
+    font-size: 16px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .buy_container {
+        flex-direction: column; /* Stack elements vertically */
+        bottom: 5%; /* Move it slightly up */
+        padding: 15px;
+    }
+
+    .buy_content {
+        padding: 10px;
+    }
+
+    .buy_button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
