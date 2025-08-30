@@ -44,7 +44,7 @@ npm run dev / npm start
 
 # Related Repositories
 
-- [Backend Repo](https://github.com/ayushrai26/ShopperStore-backend)
+- [Backend Repo](https://github.com/ayushrai26/ShopperStore-backend-.git)
 
 
 # Folder Struture 
