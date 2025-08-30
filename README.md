@@ -24,7 +24,7 @@ It provides the user interface where users can :
   ## 🛠 Tech Stack
 - React
 - React Router
-- Tailwind CSS 
+- CSS 
 - Fetch API
 - Context API
 
