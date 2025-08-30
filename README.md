@@ -40,7 +40,7 @@ cd client
 npm install
 
 # Start development server
-npm run dev
+npm run dev / npm start
 
 # Related Repositories
 
