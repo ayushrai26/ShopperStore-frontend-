@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# SHOPPERSTORE APPLICATION - FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 About
+This is the frontend of ShopperStore Application, built with React.  
+It provides the user interface where users can :
+- Create a new Account
+- Login to their existing Account
+- Add Products to their Cart
+- Search for Products
+- Pagination 
+- A Logout feature 
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## ✨ Features
+- User-friendly UI
+- Responsive design
+- Integration with backend APIs
+- State management with ContextAPI.
+- Authentication
+- Pagination and Search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## 🛠 Tech Stack
+- React
+- React Router
+- Tailwind CSS 
+- Fetch API
+- Context API
 
-### `npm test`
+## ⚙️ Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Clone the repo
+```
+git clone https://github.com/ayushrai26/ShopperStore-Frontend.git
+cd client
 
-### `npm run build`
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start development server
+npm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Related Repositories
+```
+- [Backend Repo](https://github.com/ayushrai26/ShopperStore-backend)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Folder Struture 
+```
+client
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  ├─ favicon.ico
+│  │  ├─ index.html
+│  │  ├─ logo192.png
+│  │  ├─ logo512.png
+│  │  ├─ manifest.json
+│  │  └─ robots.txt
+│  ├─ README.md
+│  └─ src
+│     ├─ App.js
+│     ├─ index.css
+│     ├─ index.js
+│     └─ pages
+│        ├─ Buynow
+│        │  ├─ Buy.css
+│        │  └─ Buy.js
+│        ├─ Cart
+│        │  ├─ Cart.css
+│        │  ├─ Cart.js
+│        │  ├─ empty-cart.webp
+│        │  └─ EmptyCart.js
+│        ├─ Feedback
+│        │  ├─ Feedback.css
+│        │  └─ Feedback.js
+│        ├─ Help
+│        │  ├─ help.css
+│        │  └─ Help.js
+│        ├─ Home
+│        │  ├─ Components
+│        │  │  ├─ Ad.js
+│        │  │  ├─ adverrise.jpg
+│        │  │  ├─ Card.js
+│        │  │  ├─ Header.js
+│        │  │  ├─ Main.js
+│        │  │  ├─ Products.js
+│        │  │  └─ SkeleteonCard.js
+│        │  ├─ Home.js
+│        │  └─ styles
+│        │     ├─ Ad.css
+│        │     ├─ Card.css
+│        │     ├─ Header.css
+│        │     ├─ Main.css
+│        │     └─ Product.css
+│        ├─ Login
+│        │  ├─ images.png
+│        │  ├─ login.css
+│        │  ├─ Login.js
+│        │  └─ photo.webp
+│        ├─ Profile
+│        │  ├─ Profile.css
+│        │  └─ Profile.js
+│        └─ Signup
+│           ├─ Signup.css
+│           └─ SignUp.js
