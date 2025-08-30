@@ -33,7 +33,6 @@ Live Demo 👉 [ShopperStore](https://ayushshopperstore.vercel.app/)
 ## ⚙️ Installation
 
 # Clone the repo
-```
 git clone https://github.com/ayushrai26/ShopperStore-Frontend.git
 cd client
 
@@ -44,7 +43,7 @@ npm install
 npm run dev
 
 # Related Repositories
-```
+
 - [Backend Repo](https://github.com/ayushrai26/ShopperStore-backend)
 
 
